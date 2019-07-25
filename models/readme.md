@@ -2,14 +2,42 @@
 
 ### Properties
 
+- `json-identity`
+  - `version` (string)
+  - `id` (string)
+  - `update` (array([usage](./usage)))
 - `basics` (object)
   - `names` (object)
-    - `first` (string) - First name
-    - `middles` (string|array) - Middle name(s)
-    - `lasts` (string|array) - Last name(s)
-    - `fullName` (string) - Names commonly used by the person
+    - `given` (string) - First name
+    - `middle` (string|array) - Middle name(s)
+    - `family` (string|array) - Last name(s)
+    - `formatted` (string) - Names commonly used by the person
+    - `honorificPrefix` (string)
+    - `honorificSuffix` (string)
   - `birth` - Information about person's birth
     - `date` (date) - Birth date
     - `place` ([postalAddress](./postalAddress)) - Birth place
-- `medical`
+  - `death` - Information about person's death
+    - `date` (date) - Birth date
+    - `place` ([postalAddress](./postalAddress)) - Death place
+- `contact` (object)
+  - `address` (array([postalAddress](./postalAddress)))
+  - `phones` (array([phone](./phone)))
+- `medical` (object)
   - `organDonor` (boolean)
+- `internet` (object)
+  - `emails` (array([email](./email)))
+- `relationships` (object)
+  - `marital`
+  - `sexualOrientation`
+  - `partners`
+- `physical` (object)
+  - `skin`
+  - `race`
+  - `hair`
+    - `colors` (array())
+    - `length`
+    - `type`
+  - `eyes` (object)
+    - `left` ([eye](./eye))
+    - `right` ([eye](./eye))
