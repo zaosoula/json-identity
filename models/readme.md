@@ -14,19 +14,21 @@
     - `formatted` (string) - Names commonly used by the person
     - `honorificPrefix` (string)
     - `honorificSuffix` (string)
-  - `birth` - Information about person's birth
+  - `birth` (object)
     - `date` (date) - Birth date
     - `place` ([postalAddress](./postalAddress)) - Birth place
-  - `death` - Information about person's death
-    - `date` (date) - Birth date
+  - `death` (object)
+    - `date` (date) - Death date
     - `place` ([postalAddress](./postalAddress)) - Death place
 - `contact` (object)
   - `address` (array([postalAddress](./postalAddress)))
   - `phones` (array([phone](./phone)))
 - `medical` (object)
   - `organDonor` (boolean)
+  - `diets` (array([diet](./diet)))
 - `internet` (object)
   - `emails` (array([email](./email)))
+  - `profiles` (array([profile](./profile)))
 - `relationships` (object)
   - `marital`
   - `sexualOrientation`
@@ -34,10 +36,12 @@
 - `physical` (object)
   - `skin`
   - `race`
-  - `hair`
+  - `hair` (object)
     - `colors` (array())
-    - `length`
-    - `type`
+    - `length` (int|string)
+    - `type` (string)
   - `eyes` (object)
     - `left` ([eye](./eye))
     - `right` ([eye](./eye))
+  - `bodyArts` (object)
+    - `tattoos` (array([tattoo](./tattoo)))
