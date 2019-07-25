@@ -1,4 +1,4 @@
-# Postal address
+# Usage
 
 ```json
 {

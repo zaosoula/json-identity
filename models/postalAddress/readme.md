@@ -6,7 +6,8 @@
   "locality": null,
   "region": null,
   "postalCode": null,
-  "street": null
+  "street": null,
+  "usage": {}
 }
 ```
 ---
@@ -19,6 +20,8 @@ Model inspired by [Shema.org PostalAddress model](https://schema.org/PostalAddre
 - `region` (string) - The region in which the locality is, and which is in the country.
 - `postalCode` (string) - The postal code
 - `street` (string) - The street address
+- `usage` ([usage](../usage))
+
 
 ### Sample 1
 ```json
@@ -27,7 +30,8 @@ Model inspired by [Shema.org PostalAddress model](https://schema.org/PostalAddre
   "locality": "lyon",
   "region": "rhône-alpes",
   "postalCode": "69008",
-  "street": "18 rue Banaudon"
+  "street": "18 rue Banaudon",
+  "usage": {}
 }
 ```
 ### Sample 2
@@ -37,6 +41,7 @@ Model inspired by [Shema.org PostalAddress model](https://schema.org/PostalAddre
   "locality": "Mountain View",
   "region": "California",
   "postalCode": "94043",
-  "street": "1600 Amphitheatre Pkwy"
+  "street": "1600 Amphitheatre Pkwy",
+  "usage": {}
 }
 ```
