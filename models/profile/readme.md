@@ -11,12 +11,12 @@
 ---
 
 ### Properties
-
+<!-- model start -->
 - `network` (string)
 - `username` (string)
 - `link` (string)
 - `usage` ([usage](../usage))
-
+<!-- model end -->
 ### Sample 1
 ```json
 {

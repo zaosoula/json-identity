@@ -13,14 +13,14 @@
 ---
 
 ### Properties
-
+<!-- model start -->
 - `local` (string)
 - `international` (string)
 - `provider` (string)
 - `type` (string|null)
 - `primary` (boolean)
 - `usage` ([usage](../usage))
-
+<!-- model end -->
 ### Sample 1
 ```json
 {

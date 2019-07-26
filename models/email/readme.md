@@ -11,12 +11,12 @@
 ---
 
 ### Properties
-
+<!-- model start -->
 - `value` (string) - The email address
 - `type` (string|null)
 - `primary` (boolean)
 - `usage` ([usage](../usage))
-
+<!-- model end -->
 ### Sample 1
 ```json
 {

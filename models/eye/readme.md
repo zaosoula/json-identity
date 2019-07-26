@@ -10,11 +10,11 @@
 ---
 
 ### Properties
-
+<!-- model start -->
 - `color` (string) - The email address
 - `blind` (boolean)
 - `correction` (float) - in diopters
-
+<!-- model end -->
 ### Sample 1
 ```json
 {

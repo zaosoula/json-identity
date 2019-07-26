@@ -11,11 +11,12 @@
 ---
 
 ### Properties
-
+<!-- model start -->
 - `from` (date) - Date on which the entity started to be used.
 - `to` (date|null) - Date on which the entity stopped being used.
 - `purpose` (string) - In which purpose the entity was used.
 - `additionalNotes` (string)
+<!-- model end -->
 
 ### Sample 1
 ```json
