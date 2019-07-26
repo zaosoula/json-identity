@@ -2,7 +2,8 @@
 
 ### Properties
 
-- `json-identity`
+<!-- model start -->
+- `json-identity` (object)
   - `version` (string)
   - `id` (string)
   - `update` (array([usage](./usage)))
@@ -24,16 +25,18 @@
   - `address` (array([postalAddress](./postalAddress)))
   - `phones` (array([phone](./phone)))
 - `medical` (object)
+  - `gender` ([gender](./gender))
   - `organDonor` (boolean)
   - `diets` (array([diet](./diet)))
+  - `bloodgroup`
 - `internet` (object)
   - `emails` (array([email](./email)))
   - `profiles` (array([profile](./profile)))
-- `relationships` (object)
+- `social` (object)
   - `marital`
   - `sexualOrientation`
-  - `partners`
 - `physical` (object)
+  - `height` - in centimeters
   - `skin`
   - `race`
   - `hair` (object)
@@ -45,3 +48,14 @@
     - `right` ([eye](./eye))
   - `bodyArts` (object)
     - `tattoos` (array([tattoo](./tattoo)))
+    - `piercings` (array([piercing](./piercing)))
+- `resume` (object)
+  - `work` (array([job](./job)))
+  - `volunteer` (array([job](./job)))
+  - `education` (array([formation](./formation)))
+  - `awards`
+  - `publications`
+  - `skills`
+  - `languages`
+  - `references`
+<!-- model end -->
