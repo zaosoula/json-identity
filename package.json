@@ -1,0 +1,19 @@
+{
+  "name": "json-identity",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zaosoula/json-identity.git"
+  },
+  "author": "Zao Soula",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zaosoula/json-identity/issues"
+  },
+  "homepage": "https://github.com/zaosoula/json-identity#readme"
+}
