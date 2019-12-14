@@ -33,7 +33,7 @@ function md2json(file) {
 
   let sourceList = [];
 
-  for (line of lines) {
+  for (let line of lines) {
     let level = indentLevel(line, indentChar);
     let regexExtract = line.match(/`(.*)`\s*(?:\(([^-]*)\))?/);
     let key = regexExtract[1];
@@ -62,14 +62,14 @@ function md2json(file) {
   });
 
   let strucuredList = {};
-  for (item of indentedList) {
+  for (let item of indentedList) {
     buildStructured(strucuredList, item);
   }
 
   function buildStructured(parent, item) {
     parent[item.key] = (item.type == 'object') ? {} : null;
     if (typeof item.children !== 'undefined') {
-      for (_item of item.children) {
+      for (let _item of item.children) {
         buildStructured(parent[item.key], _item);
       }
       cache[file] = strucuredList;
@@ -108,7 +108,7 @@ function md2json(file) {
 
 
   function indentLevel(text, level) {
-    return line.match(/^\s*/)[0].length / level;
+    return text.match(/^\s*/)[0].length / level;
   }
 
 }

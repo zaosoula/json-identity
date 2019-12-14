@@ -421,7 +421,7 @@ class JsonPerson {
     });
   }
   logUpdated(path, message){
-    this.log("Updated property : "+path+((typeof message !== 'undefined'?' --> '+message+' ':'')));
+    this.log("Updated property : "+path+((typeof message !== 'undefined')?' --> '+message+' ':''));
   }
   log(message){
     this.currentUpdate.additionalNotes=(this.currentUpdate.additionalNotes?this.currentUpdate.additionalNotes+'\n':"") + message
