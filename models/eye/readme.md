@@ -11,7 +11,7 @@
 
 ### Properties
 <!-- model start -->
-- `color` (string) - The email address
+- `color` (string) - The eye address
 - `blind` (boolean)
 - `correction` (float) - in diopters
 <!-- model end -->
