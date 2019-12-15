@@ -6,6 +6,7 @@
 - `json-identity` (object)
   - `version` (string)
   - `id` (string)
+  - `issuer` (string)
   - `update` (array([usage](./usage)))
 - `basics` (object)
   - `names` (object)
@@ -29,20 +30,26 @@
   - `organDonor` (boolean)
   - `diets` (array([diet](./diet)))
   - `bloodgroup`
+  - `smoker` (boolean)
 - `internet` (object)
   - `emails` (array([email](./email)))
   - `profiles` (array([profile](./profile)))
 - `social` (object)
-  - `marital`
+  - `marital` - cohabiting, divorced, married, other, separated, single, to_be_married, unspecified, widowed
   - `sexualOrientation`
+  - `parents` (array(string)) - IDs
+  - `children` (array(string)) - IDs
+  - `knows` (array(string)) - IDs
+  - `religion` (string)
+  - `vehicles` (array([vehicle](./vehicle)))
 - `physical` (object)
   - `height` - in centimeters
-  - `skin`
+  - `skin` - Skin tone as defined by the [Von Luschan's chromatic scale](https://commons.wikimedia.org/wiki/File:Felix_von_Luschan_Skin_Color_chart.svg)
   - `race`
   - `hair` (object)
-    - `colors` (array())
+    - `colors` (array(string))
     - `length` (int|string)
-    - `type` (string)
+    - `type` (string) - Type of hair as defined by the [Andre Walker Hair Typing System](https://en.wikipedia.org/wiki/Andre_Walker_Hair_Typing_System)
   - `eyes` (object)
     - `left` ([eye](./eye))
     - `right` ([eye](./eye))

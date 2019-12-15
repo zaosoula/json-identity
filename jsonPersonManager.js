@@ -1,4 +1,3 @@
-const fs = require('fs');
 const jsonPerson = require('./jsonPerson.js');
 class JsonPersonManager {
 
@@ -7,12 +6,16 @@ class JsonPersonManager {
     this.persons = [];
   }
 
-  scanPerson() {
-
+  newPerson() {
+    let newPerson = new JsonPerson();
+    this.persons.push(newPerson);
+    return newPerson;
   }
 
-  load() {
-
+  async saveAll() {
+    for (let person of this.persons) {
+      if(person.path!==null) await person.save();
+    }
   }
 
 }

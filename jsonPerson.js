@@ -6,7 +6,7 @@ class JsonPerson {
     this.currentUpdate = undefined;
     this.ready = false;
     this.path = null;
-    this.VERSION = "0.0.2"
+    this.VERSION = "0.0.3"
   }
 
   blank(overwriteCurrent){
@@ -19,12 +19,15 @@ class JsonPerson {
         "json-identity": {
           "version": null,
           "id": null,
-          "update": [{
-            "from": null,
-            "to": null,
-            "purpose": null,
-            "additionalNotes": null
-          }]
+          "issuer": null,
+          "update": [
+            {
+              "from": null,
+              "to": null,
+              "purpose": null,
+              "additionalNotes": null
+            }
+          ]
         },
         "basics": {
           "names": {
@@ -37,109 +40,152 @@ class JsonPerson {
           },
           "birth": {
             "date": null,
-            "place": [{
-              "country": null,
-              "locality": null,
-              "region": null,
-              "postalCode": null,
-              "street": null,
-              "usage": [{
-                "from": null,
-                "to": null,
-                "purpose": null,
-                "additionalNotes": null
-              }]
-            }]
+            "place": [
+              {
+                "country": null,
+                "locality": null,
+                "region": null,
+                "postalCode": null,
+                "street": null,
+                "usage": [
+                  {
+                    "from": null,
+                    "to": null,
+                    "purpose": null,
+                    "additionalNotes": null
+                  }
+                ]
+              }
+            ]
           },
           "death": {
             "date": null,
-            "place": [{
+            "place": [
+              {
+                "country": null,
+                "locality": null,
+                "region": null,
+                "postalCode": null,
+                "street": null,
+                "usage": [
+                  {
+                    "from": null,
+                    "to": null,
+                    "purpose": null,
+                    "additionalNotes": null
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "contact": {
+          "address": [
+            {
               "country": null,
               "locality": null,
               "region": null,
               "postalCode": null,
               "street": null,
-              "usage": [{
-                "from": null,
-                "to": null,
-                "purpose": null,
-                "additionalNotes": null
-              }]
-            }]
-          }
-        },
-        "contact": {
-          "address": [{
-            "country": null,
-            "locality": null,
-            "region": null,
-            "postalCode": null,
-            "street": null,
-            "usage": [{
-              "from": null,
-              "to": null,
-              "purpose": null,
-              "additionalNotes": null
-            }]
-          }],
-          "phones": [{
-            "local": null,
-            "international": null,
-            "provider": null,
-            "type": null,
-            "primary": null,
-            "usage": [{
-              "from": null,
-              "to": null,
-              "purpose": null,
-              "additionalNotes": null
-            }]
-          }]
+              "usage": [
+                {
+                  "from": null,
+                  "to": null,
+                  "purpose": null,
+                  "additionalNotes": null
+                }
+              ]
+            }
+          ],
+          "phones": [
+            {
+              "local": null,
+              "international": null,
+              "provider": null,
+              "type": null,
+              "primary": null,
+              "usage": [
+                {
+                  "from": null,
+                  "to": null,
+                  "purpose": null,
+                  "additionalNotes": null
+                }
+              ]
+            }
+          ]
         },
         "medical": {
-          "gender": [{
-            "sex": null,
-            "identifyAs": null
-          }],
+          "gender": [
+            {
+              "sex": null,
+              "identifyAs": null
+            }
+          ],
           "organDonor": null,
-          "diets": [{
-            "type": null,
-            "usage": [{
-              "from": null,
-              "to": null,
-              "purpose": null,
-              "additionalNotes": null
-            }]
-          }],
-          "bloodgroup": null
+          "diets": [
+            {
+              "type": null,
+              "usage": [
+                {
+                  "from": null,
+                  "to": null,
+                  "purpose": null,
+                  "additionalNotes": null
+                }
+              ]
+            }
+          ],
+          "bloodgroup": null,
+          "smoker": null
         },
         "internet": {
-          "emails": [{
-            "value": null,
-            "type": null,
-            "primary": null,
-            "usage": [{
-              "from": null,
-              "to": null,
-              "purpose": null,
-              "additionalNotes": null
-            }]
-          }],
-          "profiles": [{
-            "network": null,
-            "username": null,
-            "link": null,
-            "usage": [{
-              "from": null,
-              "to": null,
-              "purpose": null,
-              "additionalNotes": null
-            }]
-          }]
+          "emails": [
+            {
+              "value": null,
+              "type": null,
+              "primary": null,
+              "usage": [
+                {
+                  "from": null,
+                  "to": null,
+                  "purpose": null,
+                  "additionalNotes": null
+                }
+              ]
+            }
+          ],
+          "profiles": [
+            {
+              "network": null,
+              "username": null,
+              "link": null,
+              "usage": [
+                {
+                  "from": null,
+                  "to": null,
+                  "purpose": null,
+                  "additionalNotes": null
+                }
+              ]
+            }
+          ]
         },
         "social": {
           "marital": null,
-          "sexualOrientation": null
+          "sexualOrientation": null,
+          "parents": null,
+          "children": null,
+          "knows": null,
+          "religion": null,
+          "vehicles": [
+            {
+              "brand": null,
+              "model": null,
+              "color": null,
+              "plate": null
+            }
+          ]
         },
         "physical": {
           "height": null,
@@ -151,206 +197,272 @@ class JsonPerson {
             "type": null
           },
           "eyes": {
-            "left": [{
-              "color": null,
-              "blind": null,
-              "correction": null
-            }],
-            "right": [{
-              "color": null,
-              "blind": null,
-              "correction": null
-            }]
+            "left": [
+              {
+                "color": null,
+                "blind": null,
+                "correction": null
+              }
+            ],
+            "right": [
+              {
+                "color": null,
+                "blind": null,
+                "correction": null
+              }
+            ]
           },
           "bodyArts": {
-            "tattoos": [{
-              "bodyLocation": null,
-              "designDescription": null,
-              "width": null,
-              "height": null,
-              "colors": null,
-              "usage": [{
-                "from": null,
-                "to": null,
-                "purpose": null,
-                "additionalNotes": null
-              }]
-            }],
-            "piercings": [{
-              "bodyLocation": null,
-              "designDescription": null,
-              "width": null,
-              "height": null,
-              "length": null,
-              "weight": null,
-              "colors": null,
-              "usage": [{
-                "from": null,
-                "to": null,
-                "purpose": null,
-                "additionalNotes": null
-              }]
-            }]
+            "tattoos": [
+              {
+                "bodyLocation": null,
+                "designDescription": null,
+                "width": null,
+                "height": null,
+                "colors": null,
+                "usage": [
+                  {
+                    "from": null,
+                    "to": null,
+                    "purpose": null,
+                    "additionalNotes": null
+                  }
+                ]
+              }
+            ],
+            "piercings": [
+              {
+                "bodyLocation": null,
+                "designDescription": null,
+                "width": null,
+                "height": null,
+                "length": null,
+                "weight": null,
+                "colors": null,
+                "usage": [
+                  {
+                    "from": null,
+                    "to": null,
+                    "purpose": null,
+                    "additionalNotes": null
+                  }
+                ]
+              }
+            ]
           }
         },
         "resume": {
-          "work": [{
-            "organisation": [{
-              "name": null,
-              "website": null,
-              "phones": [{
-                "local": null,
-                "international": null,
-                "provider": null,
-                "type": null,
-                "primary": null,
-                "usage": [{
+          "work": [
+            {
+              "organisation": [
+                {
+                  "name": null,
+                  "website": null,
+                  "phones": [
+                    {
+                      "local": null,
+                      "international": null,
+                      "provider": null,
+                      "type": null,
+                      "primary": null,
+                      "usage": [
+                        {
+                          "from": null,
+                          "to": null,
+                          "purpose": null,
+                          "additionalNotes": null
+                        }
+                      ]
+                    }
+                  ],
+                  "emails": [
+                    {
+                      "value": null,
+                      "type": null,
+                      "primary": null,
+                      "usage": [
+                        {
+                          "from": null,
+                          "to": null,
+                          "purpose": null,
+                          "additionalNotes": null
+                        }
+                      ]
+                    }
+                  ],
+                  "numberOfEmployees": null,
+                  "parentOrganization": null,
+                  "address": [
+                    {
+                      "country": null,
+                      "locality": null,
+                      "region": null,
+                      "postalCode": null,
+                      "street": null,
+                      "usage": [
+                        {
+                          "from": null,
+                          "to": null,
+                          "purpose": null,
+                          "additionalNotes": null
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "position": null,
+              "usage": [
+                {
                   "from": null,
                   "to": null,
                   "purpose": null,
                   "additionalNotes": null
-                }]
-              }],
-              "emails": [{
-                "value": null,
-                "type": null,
-                "primary": null,
-                "usage": [{
+                }
+              ]
+            }
+          ],
+          "volunteer": [
+            {
+              "organisation": [
+                {
+                  "name": null,
+                  "website": null,
+                  "phones": [
+                    {
+                      "local": null,
+                      "international": null,
+                      "provider": null,
+                      "type": null,
+                      "primary": null,
+                      "usage": [
+                        {
+                          "from": null,
+                          "to": null,
+                          "purpose": null,
+                          "additionalNotes": null
+                        }
+                      ]
+                    }
+                  ],
+                  "emails": [
+                    {
+                      "value": null,
+                      "type": null,
+                      "primary": null,
+                      "usage": [
+                        {
+                          "from": null,
+                          "to": null,
+                          "purpose": null,
+                          "additionalNotes": null
+                        }
+                      ]
+                    }
+                  ],
+                  "numberOfEmployees": null,
+                  "parentOrganization": null,
+                  "address": [
+                    {
+                      "country": null,
+                      "locality": null,
+                      "region": null,
+                      "postalCode": null,
+                      "street": null,
+                      "usage": [
+                        {
+                          "from": null,
+                          "to": null,
+                          "purpose": null,
+                          "additionalNotes": null
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "position": null,
+              "usage": [
+                {
                   "from": null,
                   "to": null,
                   "purpose": null,
                   "additionalNotes": null
-                }]
-              }],
-              "numberOfEmployees": null,
-              "parentOrganization": null,
-              "address": [{
-                "country": null,
-                "locality": null,
-                "region": null,
-                "postalCode": null,
-                "street": null,
-                "usage": [{
+                }
+              ]
+            }
+          ],
+          "education": [
+            {
+              "organisation": [
+                {
+                  "name": null,
+                  "website": null,
+                  "phones": [
+                    {
+                      "local": null,
+                      "international": null,
+                      "provider": null,
+                      "type": null,
+                      "primary": null,
+                      "usage": [
+                        {
+                          "from": null,
+                          "to": null,
+                          "purpose": null,
+                          "additionalNotes": null
+                        }
+                      ]
+                    }
+                  ],
+                  "emails": [
+                    {
+                      "value": null,
+                      "type": null,
+                      "primary": null,
+                      "usage": [
+                        {
+                          "from": null,
+                          "to": null,
+                          "purpose": null,
+                          "additionalNotes": null
+                        }
+                      ]
+                    }
+                  ],
+                  "numberOfEmployees": null,
+                  "parentOrganization": null,
+                  "address": [
+                    {
+                      "country": null,
+                      "locality": null,
+                      "region": null,
+                      "postalCode": null,
+                      "street": null,
+                      "usage": [
+                        {
+                          "from": null,
+                          "to": null,
+                          "purpose": null,
+                          "additionalNotes": null
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "area": null,
+              "studyType": null,
+              "usage": [
+                {
                   "from": null,
                   "to": null,
                   "purpose": null,
                   "additionalNotes": null
-                }]
-              }]
-            }],
-            "position": null,
-            "usage": [{
-              "from": null,
-              "to": null,
-              "purpose": null,
-              "additionalNotes": null
-            }]
-          }],
-          "volunteer": [{
-            "organisation": [{
-              "name": null,
-              "website": null,
-              "phones": [{
-                "local": null,
-                "international": null,
-                "provider": null,
-                "type": null,
-                "primary": null,
-                "usage": [{
-                  "from": null,
-                  "to": null,
-                  "purpose": null,
-                  "additionalNotes": null
-                }]
-              }],
-              "emails": [{
-                "value": null,
-                "type": null,
-                "primary": null,
-                "usage": [{
-                  "from": null,
-                  "to": null,
-                  "purpose": null,
-                  "additionalNotes": null
-                }]
-              }],
-              "numberOfEmployees": null,
-              "parentOrganization": null,
-              "address": [{
-                "country": null,
-                "locality": null,
-                "region": null,
-                "postalCode": null,
-                "street": null,
-                "usage": [{
-                  "from": null,
-                  "to": null,
-                  "purpose": null,
-                  "additionalNotes": null
-                }]
-              }]
-            }],
-            "position": null,
-            "usage": [{
-              "from": null,
-              "to": null,
-              "purpose": null,
-              "additionalNotes": null
-            }]
-          }],
-          "education": [{
-            "organisation": [{
-              "name": null,
-              "website": null,
-              "phones": [{
-                "local": null,
-                "international": null,
-                "provider": null,
-                "type": null,
-                "primary": null,
-                "usage": [{
-                  "from": null,
-                  "to": null,
-                  "purpose": null,
-                  "additionalNotes": null
-                }]
-              }],
-              "emails": [{
-                "value": null,
-                "type": null,
-                "primary": null,
-                "usage": [{
-                  "from": null,
-                  "to": null,
-                  "purpose": null,
-                  "additionalNotes": null
-                }]
-              }],
-              "numberOfEmployees": null,
-              "parentOrganization": null,
-              "address": [{
-                "country": null,
-                "locality": null,
-                "region": null,
-                "postalCode": null,
-                "street": null,
-                "usage": [{
-                  "from": null,
-                  "to": null,
-                  "purpose": null,
-                  "additionalNotes": null
-                }]
-              }]
-            }],
-            "area": null,
-            "studyType": null,
-            "usage": [{
-              "from": null,
-              "to": null,
-              "purpose": null,
-              "additionalNotes": null
-            }]
-          }],
+                }
+              ]
+            }
+          ],
           "awards": null,
           "publications": null,
           "skills": null,

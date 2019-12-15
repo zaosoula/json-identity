@@ -113,4 +113,4 @@ function md2json(file) {
 
 }
 
-console.log(JSON.stringify(md2json('.')));
+console.log(JSON.stringify(md2json('.'), true, 2));

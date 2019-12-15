@@ -1,10 +1,10 @@
 {
   "name": "json-identity",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node test/test.js"
+    "test": "cd test"
   },
   "repository": {
     "type": "git",
