@@ -83,6 +83,6 @@ Project Link: [https://github.com/zaosoula/json-identity](https://github.com/zao
 [issues-shield]: https://img.shields.io/github/issues/zaosoula/json-identity.svg?style=flat-square
 [issues-url]: https://github.com/zaosoula/json-identity/issues
 [license-shield]: https://img.shields.io/github/license/zaosoula/json-identity.svg?style=flat-square
-[license-url]: https://github.com/zaosoula/json-identity/blob/master/LICENSE.txt
+[license-url]: https://github.com/zaosoula/json-identity/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/zaosoula
