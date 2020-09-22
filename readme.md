@@ -35,10 +35,6 @@
 ## Table of Contents
 
 * [About the Project](#about-the-project)
-  * [Sources](#sources)
-  * [Built With](#built-with)
-* [Usage](#usage)
-* [Roadmap](#roadmap)
 * [Contributing](#contributing)
 * [License](#license)
 * [Contact](#contact)
@@ -48,7 +44,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-  This file allow to store any personal information in a well structured file
+This file allows storing of any personal information in a well-structured file
+JS scripts are available to manage a json-identity file or multiple
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -89,4 +86,3 @@ Project Link: [https://github.com/zaosoula/json-identity](https://github.com/zao
 [license-url]: https://github.com/zaosoula/json-identity/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/zaosoula
-[product-screenshot]: images/screenshot.png
